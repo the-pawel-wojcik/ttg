@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ttg"
+version = "0.1.0"
+readme = {file = "readme.md", content-type = "text/markdown"}
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
+authors = [
+    {name = "Paweł Wójcik", email = "pawel.wojcik5@gmail.com"}
+]
+requires-python = ">=3.13"
+dependencies = [
+  "numpy",
+  "scipy",
+]
+
+[project.urls]
+Repository = "https://github.com/the-pawel-wojcik/ttg"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ttg"]
+
+[tool.black]
+line-length = 79

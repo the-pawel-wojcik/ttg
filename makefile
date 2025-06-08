@@ -1,7 +1,6 @@
 .PHONY: check
 check:
 	-isort --check .
-	-black --check .
 	-mypy .
 	-pytest -v --color=yes --doctest-modules tests/ src/ttg
 

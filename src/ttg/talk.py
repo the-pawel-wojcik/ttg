@@ -14,9 +14,10 @@ MODELS = {
     "cm": "compound-beta-mini",
     'scout': 'meta-llama/llama-4-scout-17b-16e-instruct',
     '3-70b': 'llama-3.3-70b-versatile',
-    'gemma': 'gemma2-9b-it',
+    # 'gemma': 'gemma2-9b-it',  # deprecated on 08/10/2025
     # 'mistral': 'mistral-saba-24b',  # deprecated on 30/07/2025
     'qwen': 'qwen/qwen3-32b',
+    'instant': 'llama-3.1-8b-instant',
 }
 
 
